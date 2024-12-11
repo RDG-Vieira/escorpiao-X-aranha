@@ -1,4 +1,4 @@
-# AS PASTAS COM AS FOTOS NÃO FORAM ADICIONADAS!
+# AS PASTAS COM AS FOTOS ESTÃO NO ZIP !
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
@@ -87,7 +87,7 @@ plt.plot(history.history['val_accuracy'], label='Acurácia de Validação')
 plt.xlabel('Épocas')
 plt.ylabel('Acurácia')
 plt.legend()
-plt.show()
+#plt.show()
 
 # Função para classificar uma nova imagem
 def classificar_imagem(imagem_path):
@@ -104,5 +104,6 @@ def classificar_imagem(imagem_path):
 
 '''Testando com uma nova imagem ELE AINDA NÃO CONSEGUE RECONHECER UMA ARANHA SE A IMAGEM FOR MUITO GRANULADA, ESSE É O PROXIMO PASSO PARA RESOLVER NO PROGRAMA.'''
 classificar_imagem('C:\\Users\\faiel\\OneDrive\Área de Trabalho\\escorpiao_aranha\\validacao\\escorpiao\\escorpiao.jpg')
+plt.show()
 
 
